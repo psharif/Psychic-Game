@@ -2,16 +2,23 @@
 <html>
 	<head>
 		<title>Psychic Game</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">		
 	</head>
 	<body>
-		<h1>Psychic Game</h1>
-		<p>Guess what letter I'm thinking of</p>
-		<p>Wins: <span id="wins">0</span></p>
-		<p>Losses: <span id="losses">0</span></p>
-		<p>Guesses Left: <span id="guesses-left">9</span></p>
-		<p>Your Guesses so far: <span id="guessed-letters"></span></p>
-		<h1 id="game-status"></h1>
-		<!-- External Javascript link -->
+		
+		<div class="ui raised very padded text container segment">
+	  		<h2 class="ui header">Psychic Game</h2>
+	  		<p>Guess what letter I'm thinking of By Pressing a letter key.</p>
+	  		<p>Wins: <span id="wins">0</span></p>
+	  		<p>Losses: <span id="losses">0</span></p>
+	  		<p>Guesses Left: <span id="guesses-left">9</span></p>
+	  		<p>Your Guesses so far: <span id="guessed-letters"></span></p>
+	  		<h2 id="game-status"></h2>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
 		<script type="text/javascript" src="assets/javascript/game.js"></script>
 	</body>
 </html>
